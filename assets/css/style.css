@@ -398,8 +398,19 @@ h6 {
   bottom: 0;
 }
 
-#hero .carousel-item {
-  background-image: url(/assets/img/slide/slide-1.jpg); 
+#hero .carousel-item.slide-1 {
+  background-image: url(/assets/img/slide/slide-1.png); 
+  background-attachment: fixed; 
+}
+
+@media (min-width: 992px) {
+  #hero .carousel-item {
+    background-size: contain;
+  }
+}
+
+#hero .carousel-item.slide-2 {
+  background-image: url(/assets/img/slide/slide-2.jpg); 
   background-attachment: fixed; 
 }
 
